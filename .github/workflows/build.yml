@@ -1,11 +1,9 @@
-name: Publish Docker image
-
 on:
   push:
     branches: ['master']
 
 jobs:
-  push_to_registry:
+  build-node:
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
